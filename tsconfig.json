@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "strict": true,
     "jsx": "preserve",
     "sourceMap": true,
@@ -21,7 +21,9 @@
       "@stores/*": ["src/store/*"],
       "@plugins/*": ["src/plugins/*"],
       "@styles/*": ["src/assets/styles/*"]
-    }
+    },
+    "allowImportingTsExtensions": true,
+    "noEmit": true
   },
   "include": ["src/**/*", "src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "exclude": ["node_modules", "dist", "**/*.js"]
