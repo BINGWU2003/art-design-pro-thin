@@ -20,7 +20,8 @@
       "@utils/*": ["src/utils/*"],
       "@stores/*": ["src/store/*"],
       "@plugins/*": ["src/plugins/*"],
-      "@styles/*": ["src/assets/styles/*"]
+      "@styles/*": ["src/assets/styles/*"],
+      "@wangeditor/editor-for-vue": ["node_modules/@wangeditor/editor-for-vue/dist/src/index.d.ts"]
     },
     "allowImportingTsExtensions": true,
     "noEmit": true

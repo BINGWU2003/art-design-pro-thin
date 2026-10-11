@@ -60,7 +60,6 @@ export default ({ mode }: { mode: string }) => {
         }
       },
       dynamicImportVarsOptions: {
-        warnOnError: true,
         exclude: [],
         include: ['src/views/**/*.vue']
       }
@@ -152,5 +151,5 @@ export default ({ mode }: { mode: string }) => {
 }
 
 function resolvePath(paths: string) {
-  return path.resolve(__dirname, paths)
+  return path.resolve(import.meta.dirname, paths)
 }
